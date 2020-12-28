@@ -1,0 +1,12 @@
+﻿@model PhotoList
+<h1>@Model.Titel</h1>
+@{
+
+    foreach (var item in Model.Potos)
+    {
+        <div class="col-2 col-lg-4 m-3">
+            <h1>@item.name</h1>
+            <img class="img-thumbnail" src="@item.img" alt="@item.name"></img>
+        </div>
+    }
+}
